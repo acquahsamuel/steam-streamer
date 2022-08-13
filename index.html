@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js" defer></script> -->
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
   <title>Music Player</title>
 </head>
 
@@ -18,33 +16,40 @@
     <h1 class="main-title"> Steam Streamer </h1>
   </div>
 
-
   <div class="wrapper">
-
+    
     <div class="music-player">
-
       <div class="navigation-main">
-        <div class="navigation-item">
-          <!-- <i class="fas fa-music"></i> -->
-          <a href="index.html">Home</a>
+
+        <div class="navigation-group"> 
+          <div class="navigation-item">
+            <i class="ti-home"></i>
+            <a href="#">Home</a>
+          </div>
+  
+          <div class="navigation-item">
+            <i class="ti-layout-menu-v"></i>
+            <a href="#"> Playlist </a>
+          </div>
+          <div class="navigation-item">
+            <i class="ti-layout-media-center-alt"></i>
+            <a href="#"> Movie </a>
+          </div>
+          <div class="navigation-item">
+            <i class="ti-headphone"></i>
+            <a href="#"> Music </a>
+          </div>
+
+            <div class="navigation-item">
+              <i class="ti-gallery"></i>
+              <a href="#"> Top Albums </a>
+            </div>    
+            
+            <div class="navigation-item">
+              <i class="ti-share"></i>
+              <a href="#"> Share  </a>
+            </div>  
         </div>
-        <div class="navigation-item">
-          <!-- <i class="fas fa-table"></i> -->
-          <a href="search.html"> Playlist </a>
-        </div>
-        <div class="navigation-item">
-          <!-- <i class="fas fa-user"></i> -->
-          <a href="profile.html"> Movie </a>
-        </div>
-        <div class="navigation-item">
-          <!-- <i class="fas fa-sign-out-alt"></i> -->
-          <a href="index.html"> Music </a>
-        </div>
-        <div class="navigation-item">
-          <!-- <i class="fas fa-sign-out-alt"></i> -->
-          <a href="index.html"> Music </a>
-        </div>
-       
       </div>
 
 
@@ -55,21 +60,20 @@
             <div class="progress" id="progress"></div>
           </div>
         </div>
-
+      
         <audio src="music/Nathaniel_Bassey_-_Adonai_Trumpet_Version.mp3" id="audio"></audio>
-
         <div class="img-container">
           <img src="images/cover-default.jpg" alt="music-cover" id="cover" />
         </div>
         <div class="navigation">
           <button id="prev" class="action-btn">
-            <i class="fas fa-backward"></i>
+            <i class="fas ti-control-backward"></i>
           </button>
           <button id="play" class="action-btn action-btn-big">
-            <i class="fas fa-play"></i>
+            <i class="fas ti-control-play"></i>
           </button>
           <button id="next" class="action-btn">
-            <i class="fas fa-forward"></i>
+           <i class="fas ti-control-forward"></i>
           </button>
         </div>
       </div>
@@ -77,25 +81,22 @@
 
     <div class="music-description">
       <div class="currently-playing">
-        <!-- <h4> Music Album </h4> -->
         <div class="current-play">
           <p id="music-title"></p>
           <div class="music-meta">
             <p> Currently Playing </p>
-            <p> Nathaniel_Bassey</p>
-            <p> Nathaniel_Bassey </p>
-            <p class="fas fa-heart"></p>
+            <p class="ti ti-heart"></p>
           </div>
         </div>
       </div>
-      <div class="pending-playlist" id="active-playing"></div>
+      <div class="pending-playlist" id="active-playing">
+       
+      </div>
     </div>
   </div>
-
   </div>
-
-  <script src="script.js"></script>
-  <!-- <script src="songList.js"></script> -->
+  <script src="js/script.js"></script>
+  <script src="js/songList.js"></script>
 </body>
 
 </html>
