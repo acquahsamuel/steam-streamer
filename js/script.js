@@ -25,9 +25,16 @@ const songs = [
   'Nathaniel_Bassey_-_Elshaddai_Adonai',
   "Nathaniel_Bassey_-_Adonai_Trumpet_Version",
   'Nathaniel_Bassey_-_Worship_Medley_Interlude',
-  "Nathaniel_Bassey_-_Adonai_Trumpet_Version",
-  'Nathaniel_Bassey_-_Ruach_Elohim',
-  "Nathaniel_Bassey_-_Adonai_Trumpet_Version"
+  'Nathaniel_Bassey_-_Exalted',
+  'Nathaniel_Bassey_-_Jesus_Live_',
+  'Nathaniel_Bassey_-_Lift_Up_Your_Heads_Pslam_24_',
+  'Nathaniel_Bassey_-_Like_A_Sympphony_Live_',
+  'Nathaniel_Bassey_-_Ndum_My_Life_',
+  'Nathaniel_Bassey_-_See_What_The_Lord_Has_Done',
+  'Nathaniel_Bassey_-_The_Lord_Is_My_Light_Psalm_27_',
+  'Nathaniel_Bassey_-_Worship_Medley_Interlude',
+  'Nathaniel_Bassey_-_Worthy_Is_the_Lamb_Hallelujah_Challenge_Praise_Medley_2_',
+  'Nathaniel_Bassey_-_Yeshua_Hamashiach_Overture_'
 ];
 
 const listingSong = songs.map((song, index) => {
@@ -36,7 +43,6 @@ const listingSong = songs.map((song, index) => {
 	<div class="main-listing active">
   <p class="song-count"> ${index+1}.</p>
 	<p class="song-title"> ${song} </p>
-  
 	</div>
 	`;
 });
